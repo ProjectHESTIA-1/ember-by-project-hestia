@@ -1,0 +1,5 @@
+-- Local development seed data.
+-- Runs on `pnpm db:reset`. Must contain ONLY fictional data: no real people,
+-- no real organizations, no production exports.
+--
+-- Populated in Phase 1 once the first migration lands.
