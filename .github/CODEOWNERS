@@ -1,0 +1,37 @@
+# Protected areas (MVP plan §8) require review from a core maintainer.
+# Enable "Require review from Code Owners" in the main branch protection rule
+# for these entries to be enforced.
+#
+# Replace @passwordd009 with an Ember maintainers team (e.g. @<org>/ember-core)
+# once one exists.
+
+# Default owner for anything not matched below.
+*                                   @passwordd009
+
+# Infrastructure configuration and CI
+/.github/                           @passwordd009
+/next.config.ts                     @passwordd009
+/scripts/                           @passwordd009
+
+# Authentication, authorization, and database security
+/src/lib/auth/                      @passwordd009
+/src/lib/supabase/                  @passwordd009
+/src/lib/env/                       @passwordd009
+/src/proxy.ts                       @passwordd009
+/src/middleware.ts                  @passwordd009
+
+# Database migrations, RLS policies, and seed data
+/supabase/                          @passwordd009
+
+# Payments, donations, and financial logic
+/src/modules/donations/             @passwordd009
+/src/modules/payments/              @passwordd009
+/src/app/api/webhooks/              @passwordd009
+
+# Policy documents
+/docs/SECURITY.md                   @passwordd009
+/docs/AUTHORIZATION.md              @passwordd009
+/docs/PAYMENT_ARCHITECTURE.md       @passwordd009
+/docs/DATA_RETENTION.md             @passwordd009
+/SECURITY.md                        @passwordd009
+/LICENSE                            @passwordd009
