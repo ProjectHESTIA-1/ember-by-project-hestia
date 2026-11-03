@@ -58,6 +58,7 @@ verification and reset emails) at http://127.0.0.1:54324.
 | [docs/AUTHORIZATION.md](docs/AUTHORIZATION.md)                 | Roles, permissions, RLS, service-role policy |
 | [docs/PAYMENT_ARCHITECTURE.md](docs/PAYMENT_ARCHITECTURE.md)   | Donation flow (proposal; pending approval)   |
 | [docs/API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md)         | Server actions and route handlers            |
+| [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md)               | Step-by-step hosted Supabase setup checklist |
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)                       | Environments, releases, backups              |
 | [docs/ENVIRONMENT_VARIABLES.md](docs/ENVIRONMENT_VARIABLES.md) | Every variable, its scope, and who owns it   |
 | [docs/TESTING.md](docs/TESTING.md)                             | Test layers and how to run them              |

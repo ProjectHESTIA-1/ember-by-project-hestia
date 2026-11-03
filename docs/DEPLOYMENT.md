@@ -4,6 +4,8 @@ _Last updated: Phase 0.5. No hosted environments exist yet (decision D9: a human
 
 ## Environments
 
+To create the Supabase projects, follow [SUPABASE_SETUP.md](SUPABASE_SETUP.md).
+
 | Environment | Next.js        | Supabase project      | Branch / trigger   | Who deploys        |
 | ----------- | -------------- | --------------------- | ------------------ | ------------------ |
 | Local       | `pnpm dev`     | Supabase CLI (Docker) | —                  | developer          |
