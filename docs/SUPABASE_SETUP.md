@@ -49,8 +49,9 @@ The **project reference ID** isn't secret and is fine to share.
 5. **Create**, then wait about 2 minutes.
 6. Copy the **Reference ID** (Project Settings → General).
 
-> Status: a project exists with reference ID `hunfedxeuskkawzodxrs`. Confirm it is the
-> **staging** project (see step 7).
+> Status: project `hunfedxeuskkawzodxrs` exists and is designated **staging / development
+> only** (owner decision, 2026-11-03). It must never hold real resident data or be promoted to
+> production.
 
 ## Step 3 — Sign-in security (10 min)
 
@@ -109,9 +110,12 @@ Rules:
 
 - **Only ever point it at staging or a development project. Never at production.** It can
   run SQL and change schema on whatever project it targets.
-- It's currently enabled with the `account`, `database`, `development`, `functions`, and
-  `branching` features, which include write access. To limit it to reading, add
-  `&read_only=true` to the URL in `.mcp.json`. Recommended once real test data exists.
+- It's enabled with the `account`, `database`, `development`, `functions`, and `branching`
+  features, which include write access. **Write access is intentional** (owner decision,
+  2026-11-03) because `hunfedxeuskkawzodxrs` is a non-production project. To limit it to
+  reading, add `&read_only=true` to the URL in `.mcp.json`.
+- The production project, when created, gets **no** MCP entry in `.mcp.json`. Production is
+  changed only by reviewed migrations through the GitHub `production` environment.
 - Schema changes still go through migration files in `supabase/migrations/` and a PR. The MCP
   server is for inspecting, debugging, and generating types, not for hand-editing the database.
 
